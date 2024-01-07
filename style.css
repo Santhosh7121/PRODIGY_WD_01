@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;600&display=swap');
+:root{
+    --brown:#ff36368a;
+    --blue:#78fff4fd;
+    --light-color:#777;
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+    --border:.2ren solid rgba(0,0,0.1);
+    --outline:.1rem solid rgba(0,0,0,.1);
+    --outline-hover:.2rem solid var(--black);
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: all .2s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+body{
+    background:#eee;    
+}
+section{
+    padding:2rem 9%;
+}
+
+.header{
+    position: fixed;
+    top:0; left:0; right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:#fff;
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color:var(--black);   
+}
+
+.header .logo i{
+    color:var(--brown);
+}
+
+.header .navbar a{
+    font-size: 1.7rem;
+    margin:0 1rem;
+    color:var(--black);    
+}
+
+.header .navbar a:hover{
+    color:var(--brown);
+}
+
+.header .icons div{
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: #eee;
+    color:var(--black);
+    font-size: 2rem;
+    margin-right: .3rem;
+    text-align: center;
+}
+
+.header .icons div:hover{
+    background: var(--brown);
+    color: #fff;
+
+}
+
+.products .product-slider{
+    padding:1rem;
+}
+.products .product-slider .box{
+    background: #fff;
+    border-radius: .5rem;
+    text-align: center;
+    padding:3rem 2rem;
+    outline-offset: -1rem;
+    outline: var(--outline);
+    box-shadow: var(--box-shadow);
+}
+
+.products .product-slider .box{
+    outline-offset: 0rem;
+    outline: var(--outline-hover);
+}
+.products .product-slider .box img{
+    height:20rem;
+}
+.products .product-slider .box h3{
+    font-size: 2.5rem;
+    color:var(--black);
+}
+.products .product-slider .box .price{
+    font-size: 2rem;
+    color:var(--light-color);
+    padding:.5rem 0;
+}
+
+.products .product-slider .box .stars i{
+    font-size: 1.7rem;
+    color:var(--brown);
+    padding:.5rem 0;
+}
+
+section{
+    padding:2rem;
+}
+
+.home{
+    display: flex;
+    align-items: conter;
+    justify-content: center;
+    background: url(aaa.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .content{
+    text-align: center;
+    width:60rem;
+}
+.home .content h3{
+    color:var(--black);
+    font-size: 3rem;
+}
+
+.home .content h3 span{
+    color: #ffffff;
+}
+.home .content p{
+    color:var(--orange);
+    font-size: 1.7rem;
+    padding:1rem 0;
+    line-height: 1.8;
+}
+
+
